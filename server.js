@@ -10,3 +10,4 @@ app.use(express.json());
 
 require("./server/config/database.config")(db);
 require("./server/routes/product.route")(app);
+require("./server/routes/user.route")(app);
