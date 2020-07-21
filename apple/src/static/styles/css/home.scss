@@ -119,15 +119,24 @@
   }
 
   .ads {
-    .col {
-      margin: 10px;
+    .col-md-6 {
       padding: 10px;
+    }
+
+    .row {
+      overflow: hidden;
+    }
+
+    [class*="col-"] {
+      margin-bottom: -99999px;
+      padding-bottom: 99999px;
     }
   }
 
   .footer {
     background-color: #f5f5f7;
     width: 100%;
+    margin-top: 20px;
     padding: 20px;
     font-size: 12px;
     color: #86868b;
