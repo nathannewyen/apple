@@ -11,8 +11,11 @@ const ProductSchema = new mongoose.Schema({
         min: [1, "Price must be at least $1"],
     },
     description: {
-        type: String,
-        required: [true, "Please descript your product."],
+        type: [String],
+        validate: {
+            validator: (a) => { return a.length > 0 ;},
+            message: "Please describe your product."
+        }
     },
     img_url: {
         type: String,

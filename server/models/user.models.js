@@ -11,14 +11,24 @@ const UserSchema = new mongoose.Schema({
     },
     address: {
         type: String,
+        required: [true, "Address is required"]
     },
     email: {
         type: String,
+        //need email regex
         required: [true, "Email is required."],
     },
     phone: {
-        type: Number,
+        type: String,
+        //need phone regex 
+        required: [true,"Phone is required"]
     },
+    orders:[
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Order"
+        }
+    ]
 }, {
     timestamps: true,
 });

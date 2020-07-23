@@ -36,7 +36,7 @@ module.exports = {
     },
 
 
-    deleteProduct(req, res) {
+    delete(req, res) {
         Product.deleteOne({
                 _id: req.params.id
             })

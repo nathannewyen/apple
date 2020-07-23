@@ -10,7 +10,7 @@ module.exports = (app) => {
     app.get("/api/products/:id", product.show)
 
     // Delete a product
-    app.delete("/api/products/:id", product.deleteProduct)
+    app.delete("/api/products/:id", product.delete)
 
     //Edit a product
     app.put("/api/products/:id", product.update)
