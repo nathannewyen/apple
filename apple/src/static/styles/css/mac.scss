@@ -1,21 +1,20 @@
   // Checkbox
 
   .box {
-      width: 500px;
-      margin: 50px auto;
-      clear: both;
-      display: block;
-      padding: 0px 0px;
-      border-radius: 4px;
+      width: 150px;
+      margin: 0 auto;
   }
 
-
   .box .checkbox-container {
-      float: left;
       width: 50%;
       box-sizing: border-box;
-      text-align: center;
+      display: inline-block;
       padding: 40px 0px;
+  }
+
+  .input-title {
+      margin: 5px;
+      font-size: 12px;
   }
 
 
@@ -27,9 +26,9 @@
       margin: auto;
       cursor: pointer;
       font-size: 22px;
-      line-height: 24px;
-      height: 24px;
-      width: 24px;
+      line-height: 32px;
+      height: 32px;
+      width: 32px;
       clear: both;
   }
 
@@ -43,8 +42,8 @@
       position: absolute;
       top: 0px;
       left: 0px;
-      height: 30px;
-      width: 30px;
+      height: 32px;
+      width: 32px;
       background-color: transparent;
       border-radius: 10px;
       transition: all 0.1s ease-out;
@@ -61,12 +60,13 @@
   .checkbox-label .checkbox-custom.circular {
       border-radius: 50%;
       background-color: #AAAEB1;
+      box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0), 0 0 0 4px hsla(0, 0%, 83.9%, 0), inset 0 2px 2px 0 rgba(0, 0, 0, .2);
   }
 
   .checkbox-label input:checked~.checkbox-custom.circular {
       border-radius: 50%;
       background-color: #AAAEB1;
-      border: 1px solid #4F91D6;
+      border: 1.3px solid #4F91D6;
   }
 
   .checkbox-label .checkbox-custom.circular:hover {
@@ -83,5 +83,36 @@
   }
 
   .checkbox-label input:checked~.checkbox-custom.circular::before {
+      border-radius: 50%;
+  }
+
+  //   Silver
+
+  .checkbox-label .checkbox-custom.silver {
+      border-radius: 50%;
+      background-color: #DCDFDE;
+      box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0), 0 0 0 4px hsla(0, 0%, 83.9%, 0), inset 0 2px 2px 0 rgba(0, 0, 0, .2);
+  }
+
+  .checkbox-label input:checked~.checkbox-custom.silver {
+      border-radius: 50%;
+      background-color: #DCDFDE;
+      border: 1.3px solid #4F91D6;
+  }
+
+  .checkbox-label .checkbox-custom.silver:hover {
+      border: 2px solid #DCDCDC;
+  }
+
+  .checkbox-label .checkbox-custom.silver::after {
+      border-radius: 50%;
+  }
+
+  .checkbox-label .checkbox-custom.silver::before {
+      border-radius: 50%;
+      border: 2px solid #FFFFFF;
+  }
+
+  .checkbox-label input:checked~.checkbox-custom.silver::before {
       border-radius: 50%;
   }
