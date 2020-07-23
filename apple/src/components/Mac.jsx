@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "@reach/router";
+import "../static/styles/css/mac.scss";
 
 const Mac = (props) => {
   return (
@@ -19,9 +20,6 @@ const Mac = (props) => {
               alt="mac"
               width=" 250"
             />
-            <div class="check-box">
-              <input type="radio" />
-            </div>
 
             <p className="card-text">
               Some quick example text to build on the card title and make up the
@@ -33,6 +31,24 @@ const Mac = (props) => {
             <a href="#!" class="card-link">
               Another link
             </a>
+          </div>
+        </div>
+
+        <div className="box text-dark">
+          <div className="checkbox-container circular-container">
+            <label className="checkbox-label">
+              <input type="checkbox" />
+              <span className="checkbox-custom circular"></span>
+            </label>
+            <div className="input-title">Rectangular</div>
+          </div>
+
+          <div className="checkbox-container circular-container">
+            <label className="checkbox-label">
+              <input type="checkbox" />
+              <span className="checkbox-custom circular"></span>
+            </label>
+            <div className="input-title">Circular</div>
           </div>
         </div>
       </div>
