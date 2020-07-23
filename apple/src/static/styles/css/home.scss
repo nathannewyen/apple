@@ -121,6 +121,16 @@
   .ads {
     .col-md-6 {
       padding: 10px;
+
+      h1 {
+        padding-top: 30px;
+        padding-bottom: 10px;
+      }
+
+      img {
+        padding: 30px;
+      }
+
     }
 
     .row {
@@ -144,6 +154,10 @@
     a {
       font-size: 13px;
       color: #1d1d1f;
+    }
+
+    .row {
+      padding-bottom: 10px;
     }
   }
 }
