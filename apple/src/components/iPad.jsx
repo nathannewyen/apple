@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "@reach/router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../static/styles/css/ipad.scss";
+import bag from "../static/images/svg/bag.svg"
 
 const Ipad = (props) => {
   return (
@@ -21,7 +22,7 @@ const Ipad = (props) => {
               height="550"
             />
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-5">
             <div className="new">New</div>
             <div className="buy-title">Buy iPad Pro</div>
             <div className="delivery">Fast, free, no‑contact delivery</div>
@@ -59,6 +60,9 @@ const Ipad = (props) => {
             </form>
             {/* End Model */}
 
+            <hr/>
+            <h5>Finish</h5>
+
             {/* Check Box Color */}
             <div className="box text-dark">
               <div className="checkbox-container circular-container border">
@@ -78,6 +82,14 @@ const Ipad = (props) => {
               </div>
             </div>
             {/* End Check Box Color */}
+
+            {/* Price */}
+            <div className="price bg-light">
+              <h1>$799.00</h1>
+              <button className="btn text-light">Select</button>{" "}
+              <i class="fal fa-heart"></i>
+            </div>
+            {/* End Price */}
           </div>
         </div>
       </div>

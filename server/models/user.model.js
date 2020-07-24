@@ -19,6 +19,10 @@ const UserSchema = new mongoose.Schema({
     phone: {
         type: String,
     },
+    orders: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Order"
+    }]
 }, {
     timestamps: true,
 });

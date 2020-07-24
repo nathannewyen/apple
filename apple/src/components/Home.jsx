@@ -46,8 +46,8 @@ const Home = (props) => {
 
       <div className="ads">
         <div className="row text-center">
-          <div className="col-md-6">
-            <div class="col-md-12 bg-light">
+          <div className="col-sm-6">
+            <div class="col-sm-12 bg-light">
               <h1>Apple Card Monthly Installments</h1>
               <p>
                 <Link to="#">
@@ -57,8 +57,8 @@ const Home = (props) => {
               <img src={All} alt="all" width="400px" />
             </div>
           </div>
-          <div className="col-md-6 ">
-            <div class="col-md-12 bg-light">
+          <div className="col-sm-6 ">
+            <div class="col-sm-12 bg-light">
               <h1>Apple Approach to repoening stores</h1>
               <p>
                 <Link to="#">
