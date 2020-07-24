@@ -4,6 +4,8 @@ import { Router } from "@reach/router";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Mac from "./components/Mac";
+import Ipad from "./components/iPad";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <Router>
         <Home path="/" />
         <Mac path="/mac" />
+        <Ipad path="/ipad" />
       </Router>
+      <Footer />
     </div>
   );
 }

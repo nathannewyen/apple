@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import { Link } from "@reach/router";
 import "../static/styles/css/navbar.scss";
 
@@ -33,7 +33,7 @@ const Navbar = (props) => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#">
+            <Link className="nav-link" to="/ipad">
               iPad
             </Link>
           </li>

@@ -1,0 +1,42 @@
+.ipad {
+    .buy-title {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    h5 {
+        margin-top: 10px;
+    }
+
+    form {
+        margin-top: 15px;
+
+        .card {
+
+            .title {
+                font-size: 17px;
+                font-weight: 600;
+                padding: 10px 0px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 1201px) {
+    .ipad {
+        img {
+            width: 450px;
+        }
+
+        .card {
+            width: 450px;
+            height: 100px;
+        }
+    }
+}
