@@ -57,8 +57,27 @@ const Ipad = (props) => {
                 </div>
               </div>
             </form>
-
             {/* End Model */}
+
+            {/* Check Box Color */}
+            <div className="box text-dark">
+              <div className="checkbox-container circular-container border">
+                <label className="checkbox-label">
+                  <input type="checkbox" />
+                  <span className="checkbox-custom circular" />
+                </label>
+                <p className="input-title">Space Gray</p>
+              </div>
+
+              <div className="checkbox-container circular-container float-right border">
+                <label className="checkbox-label">
+                  <input type="checkbox" />
+                  <span className="checkbox-custom silver" />
+                </label>
+                <p className="input-title">Silver</p>
+              </div>
+            </div>
+            {/* End Check Box Color */}
           </div>
         </div>
       </div>
